@@ -8,6 +8,7 @@
 section {
     height: 105vh;
     background-image: url("images/RPS-background.png");
+    background-attachment: fixed;
     opacity: .95;
 }
 
@@ -83,6 +84,10 @@ button:focus {
     align-items: center;
 }
 
+img {
+    height: 30vmin;
+}
+
 .my-hand {
     position: relative;
     left: 5%;
@@ -101,13 +106,14 @@ button:focus {
 
 .winner {
     position: absolute;
-    bottom: 260px;
+    bottom: 240px;
     color: cornsilk;
     font-size: 4vmin;
     font-weight: bolder;
 }
 #my-winner {
     display: none;
+    left: 320px;
 }
 #computer-winner {
     display: none;
@@ -117,4 +123,28 @@ button:focus {
     display: none;
     color: cornsilk;
     font-size: 4vmin;
+}
+
+@media only screen and (max-width: 750px) {
+    section {
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .options {
+        left: -10px;
+    }
+
+    button {
+        width: 100px;
+        height: 55px;
+        padding: 5px;
+        margin-left: 20px;
+    }
+
+    img {
+        size: 25px;
+    }
 }
