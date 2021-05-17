@@ -6,44 +6,63 @@
 
 
 section {
-    height: 100vh;
-    background-color: aqua;
+    height: 105vh;
+    background-image: url("images/RPS-background.png");
+    opacity: .95;
 }
+
 
 .heading {
     height: 10vh;
+    font-size: 4.5vmin;
+    color: cornsilk;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
 }
 
 .scores {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 40px;
 }
 
 .scores h2 {
-    font-size: 30px;
+    color: cornsilk;
+    font-size: 5vmin;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
 }
 
 .scores p {
     text-align: center;
     padding: 10px;
-    font-size: 25px;
+    font-size: 5vmin;
+    color: aliceblue;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    right: 50px;
 }
 
 button {
-    width: 100px;
+    width: 120px;
+    height: 55px;
     padding: 15px;
     margin-left: 100px;
     border: none;
-    background-color: cornflowerblue;
-    color: cornsilk;
+    background-color: cornsilk;
+    color: black;
     cursor: pointer;
     border-radius: 2px 2px 2px 2px;
     font-size: large;
@@ -55,7 +74,7 @@ button:focus {
 .match {
     position: relative;
     align-items: center;
-    top: 20%;
+    top: 15%;
 }
 
 .hands {
@@ -68,34 +87,34 @@ button:focus {
     position: relative;
     left: 5%;
     transform: rotateY(180deg);
+    background-color: cornsilk;
+    border-radius: 50%;
+    opacity: .9;
 }
 
 .computer-hand {
     position: relative;
-
+    background-color: cornsilk;
+    border-radius: 50%;
+    opacity: .9;
 }
 
 .winner {
     position: absolute;
-    bottom: 240px;
+    bottom: 260px;
+    color: cornsilk;
+    font-size: 4vmin;
+    font-weight: bolder;
 }
 #my-winner {
     display: none;
 }
 #computer-winner {
     display: none;
+    right: 350px;
 }
 #draw {
     display: none;
+    color: cornsilk;
+    font-size: 4vmin;
 }
-
-.options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 80px;
-    right: 50px;
-}
-
-
