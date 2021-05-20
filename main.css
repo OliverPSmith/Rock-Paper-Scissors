@@ -147,4 +147,15 @@ img {
     img {
         size: 25px;
     }
+    
+    #my-winner {
+        display: none;
+        left: 120px;
+        top: -20px;
+    }
+    #computer-winner {
+        display: none;
+        left: 200px;
+        top: -20px;
+    }
 }
